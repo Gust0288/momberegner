@@ -15,7 +15,7 @@ calcBut.addEventListener("click", (beloeb, moms) => {
 })
 
 
-function momsBeregner (beloeb, moms){
+function momsBeregner (beloeb, moms = 0.25){
     // moms = 0.25;
 
     const resulat = beloeb * moms;
@@ -23,7 +23,7 @@ function momsBeregner (beloeb, moms){
     console.log(`Endelige beløb: ${beloeb + resulat}`)
 }
 
-result.textContent = momsBeregner(1000, 0.25);
+result.textContent = momsBeregner(1000);
 
 
 

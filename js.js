@@ -17,8 +17,10 @@ calcBut.addEventListener("click", (beloeb, moms) => {
 
 function momsBeregner (beloeb, moms){
     // moms = 0.25;
-    
-    return beloeb * moms
+
+    const resulat = beloeb * moms;
+    console.log(`Beløb: ${beloeb} Moms: ${moms}`)
+    console.log(`Endelige beløb: ${beloeb + resulat}`)
 }
 
 result.textContent = momsBeregner(1000, 0.25);
